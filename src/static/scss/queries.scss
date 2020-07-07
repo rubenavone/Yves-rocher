@@ -2,28 +2,235 @@
 
 @media (min-width: 576px) {
     body {
+
         font-size: 4vw;
-        background-color: $green;
+
+        .queries-sm {
+            display: block;
+            font-size: 2vw;
+
+        }
+
+        .queries-xsm {
+            display: none;
+        }
+
+
+        header {
+            flex-direction: row;
+            justify-content: space-between;
+
+            nav {
+                width: 100%;
+
+                .logo {
+                    margin-left: 10%;
+                }
+            }
+
+            button {
+                align-self: baseline;
+                margin-right: 2%;
+            }
+
+
+        }
     }
 }
 
 @media (min-width: 768px) {
+
+    /* sticky nav
+       sliders
+    /* phone at first section and none footer*/
     body {
-        font-size: 4vw;
-        background-color: $off-white;
+        .queries-md {
+            display: block;
+            font-size: 2vw;
+        }
+
+        .queries-xsm,
+        .queries-sm {
+            display: none;
+        }
+
+        font-size: 2vw;
+
+
     }
+
+    header {
+        nav {
+            .logo {
+                width: 15vw;
+            }
+        }
+    }
+
+    main {
+        #first-section {
+            article {
+                top: 25%;
+                left: 15%;
+            }
+
+            .adresses {
+                right: 0px;
+                bottom: 4%;
+                color: $off-white;
+
+            }
+        }
+
+
+
+
+
+        #second-section {
+            article {
+                margin-left: 60%;
+            }
+        }
+
+        #third-section {
+            article {
+                margin-left: 2%;
+
+                h2,
+                h3,
+                h4 {
+                    text-align: center;
+                }
+
+                p {
+                    color: $black;
+                    text-shadow: none;
+                    text-align: left;
+                }
+            }
+        }
+
+        #fourth-section {
+            flex-wrap: nowrap;
+            font-size: 1.5;
+
+
+            section {
+                align-self: baseline;
+
+
+
+                main {
+                    .card-description {
+                        min-height: 17.5vw;
+
+                        ul {
+                            min-height: 16.4vw;
+                        }
+                    }
+
+                    .find-why {
+                        min-height: 15vw;
+
+                    }
+
+                    div {
+                        margin-left: 30%;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .logo {
+
+            margin-left: auto;
+            width: 15vw;
+
+        }
+    }
+
 }
 
 @media (min-width: 992px) {
     body {
+        .queries-lg {
+            display: block;
+        }
+
+        .queries-xsm,
+        .queries-sm,
+        .queries-md {
+            display: none;
+        }
+
         font-size: 2vw;
-        background-color: $black;
+
     }
+
+    header {
+        height: 8vw;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        width: 100%;
+        background-color: $off-white;
+
+
+        nav {
+            .logo {
+                width: 10vw;
+            }
+        }
+    }
+
+
 }
 
 @media (min-width: 1200px) {
     body {
-        font-size: 2vw;
-        background-color: $blue;
+
+        .queries-xsm,
+        .queries-sm,
+        .queries-md,
+        .queries-lg {
+            display: none;
+        }
+
+        .queries-xl {
+            display: block;
+        }
+
+        font-size: 1.5vw;
+
     }
+
+    main {
+        #fourth-section {
+            flex-wrap: nowrap;
+            font-size: 1.5;
+
+
+            section {
+                align-self: baseline;
+
+
+                main {
+
+                    .find-why {
+                        min-height: 17.5vw;
+
+                    }
+
+                    div {
+                        margin-left: 30%;
+                    }
+                }
+            }
+        }
+    }
+
+
+
 }

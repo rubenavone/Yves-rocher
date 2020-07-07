@@ -6,7 +6,30 @@ Colors, will be in variable.scss
 
 body {
     font-size: 4vw;
-    background-color: red;
+    background-color: $off-white;
+    overflow-x: hidden;
+
+    .queries-sm,
+    .queries-md,
+    .queries-lg,
+    .queries-xl {
+        position: absolute;
+        display: none;
+        font-size: 2vw;
+
+        z-index: 999;
+        top: 7%;
+        bottom: 0%;
+    }
+
+    .queries-xsm {
+        position: absolute;
+        font-size: 2vw;
+        z-index: 999;
+        top: 7%;
+        bottom: 0%;
+
+    }
 
     .flex {
         display: flex;
@@ -29,7 +52,7 @@ body {
     }
 
     .mg-t {
-        margin-top: 50px;
+        margin-top: 5%;
     }
 
     .mg-b {
@@ -49,6 +72,10 @@ body {
     .place-top {
         top: 0;
     }
+
+    .upper-case {
+        text-transform: uppercase;
+    }
 }
 
 /*Global*/
@@ -58,37 +85,47 @@ header {
 
     flex-direction: column;
 
+
     .flex {
         display: flex;
         flex-wrap: unset;
     }
 
     nav {
-        justify-content: space-between;
         margin-left: 4%;
         flex-direction: row;
+        justify-content: center;
 
         .logo {
             max-width: 50%;
-            margin-left: 30%;
+            margin-left: -10%;
+            width: 25vw;
+            margin-top: 2%;
+        }
 
+        img {
+            align-self: center;
+            margin-right: auto;
         }
     }
 
     button {
+        font-family: "brandon_grotesquelight", 'linotype_didotroman', Arial, Helvetica, sans-serif;
         font-size: large;
         padding: 10px 30px 10px 30px;
         background-color: $secondary;
         border: none;
         align-self: center;
+        margin-top: 3vw;
+        color: $off-white;
     }
 }
 
 /* First section*/
 #first-section {
-    border: 2px solid $blue;
+    height: 60vw;
     font-family: "brandon_grotesquelight", 'linotype_didotroman', Arial, Helvetica, sans-serif;
-
+    margin-top: 2%;
 
     article {
         display: flex;
@@ -98,6 +135,7 @@ header {
         left: 5%;
         top: 15%;
         line-height: 0;
+        text-align: center;
 
         img {
             width: 50vw;
@@ -116,6 +154,15 @@ header {
         }
     }
 
+
+    .adresses {
+        right: 0px;
+        bottom: -1%;
+        font-size: 2vw;
+    }
+
+
+
 }
 
 
@@ -123,23 +170,48 @@ header {
 /*second section*/
 
 #second-section {
-    border: 2px solid $blue;
+    height: 60vw;
+    font-family: "brandon_grotesquelight",
+        'linotype_didotroman',
+        Arial,
+        Helvetica,
+        sans-serif;
 
-    .litle-pic {
-        width: 50vw;
+    .woman-in-room {
+        width: 60%;
     }
 
-    font-family: "brandon_grotesquelight",
-    'linotype_didotroman',
-    Arial,
-    Helvetica,
-    sans-serif;
+    .litle-pic {
+        width: 50%;
+        height: 50%;
+        z-index: 0;
+        position: absolute;
+        right: 10%;
+        height: 43%;
+        object-position: bottom;
+        top: 40%;
+    }
 
     article {
         display: flex;
         flex-direction: column;
-        color: $grey;
+        color: $black;
         text-shadow: 1px 1px 1px $white;
+        text-align: center;
+        line-height: 0;
+        margin-left: 20%;
+
+        h2,
+        h3 {
+            margin-left: 44%;
+        }
+
+        p {
+            line-height: 10px;
+            color: $off-white;
+            text-shadow: 1px 1px 1px $black;
+
+        }
 
     }
 }
@@ -147,20 +219,152 @@ header {
 
 
 #third-section {
-    border: 2px solid $blue;
-}
+    height: 60vw;
 
-#fourth-section> {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    font-family: "brandon_grotesquelight",
+        'linotype_didotroman',
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    .chill-picture {
+        transform: scaleX(-1);
+        width: 50%;
+        z-index: 0;
+        top: 40%;
+    }
+
+    .room-picture {
+        left: 35%;
+        top: 5%;
+    }
 
     article {
-        border: 2px solid black;
-        box-shadow: 2px 2px 2px black;
+        display: flex;
+        flex-direction: column;
+        color: $black;
+        text-shadow: 1px 1px 1px $white;
+        text-align: left;
+        line-height: 0;
+        top: 0%;
+        margin-left: 5%;
+
+
+        .hour {
+            margin-left: 10%;
+            color: $grey;
+            text-shadow: none;
+        }
+
+        h2,
+        h3,
+        h4 {
+            text-align: left;
+        }
+
+        p {
+            color: $off-white;
+            text-shadow: 1px 1px 1px black;
+        }
+    }
+}
+
+#fourth-section {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100vw;
+    font-family: "brandon_grotesquelight",
+        'linotype_didotroman',
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    section {
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
         align-content: center;
         align-self: center;
-        min-height: 50vh;
+
+        width: 100vw;
+
+        img {
+            min-height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        main {
+
+            color: $brown;
+
+            h2,
+            p,
+            article {
+                padding: 0% 7% 0% 4%;
+
+            }
+
+            h2 {
+                color: $black;
+            }
+
+            ul {
+                flex-direction: column;
+            }
+
+            article {
+                justify-content: space-between;
+
+
+                p {
+                    align-self: center;
+                    color: $brown;
+                }
+
+                div {
+                    flex-direction: column;
+                    width: 100%;
+                    margin-left: 50%;
+                    line-height: 0;
+                }
+            }
+        }
+
+
+        button {
+            align-self: center;
+            background-color: $green;
+            color: $off-white;
+            border: none;
+            padding: 2% 30%;
+        }
+    }
+
+
+}
+
+footer {
+    justify-content: space-around;
+
+
+    img {
+        align-self: center;
+        margin-right: auto;
+    }
+
+    .logo {
+
+        margin-left: auto;
+        width: 25vw;
+
+    }
+
+    p {
+        font-size: 2vw;
+        align-self: flex-end;
+        margin-right: auto;
     }
 }
 

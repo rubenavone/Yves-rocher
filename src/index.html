@@ -9,7 +9,6 @@
   <title>Yves Rocher Hotel Spa</title>
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <link rel="stylesheet" type="text/css" href="fonts/webfonts/stylesheet.css" />
   <link rel="stylesheet" type="text/css" href="static/dist/css/main.css" />
   <script src="static/dist/js/script.js"></script>
 </head>
@@ -17,6 +16,14 @@
 <body>
   <!-- Réalisation d'une intégration pour didao Navone Ruben premier regard le 06/07/2020
          Le gros de la réalisation sera faite le 07/07/2020 -->
+  <!-- Media queries viewer -->
+  <p class="queries-xsm">
+    < 576px</p> <p class="queries-sm">576px
+  </p>
+  <p class="queries-md">768px</p>
+  <p class="queries-lg">992px</p>
+  <p class="queries-xl">1200px</p>
+  <!-- Media queries viewer end-->
   <header class="flex">
     <nav class="flex">
       <img src="img/assets/icons8-menu.svg" alt="" />
@@ -25,11 +32,12 @@
     <!-- burger à ajouter-->
 
     <!--Alt for blinded people-->
-    <button>Réserver</button>
+    <button class="upper-case">Réserver</button>
   </header>
   <main>
+
     <!-- First Section -->
-    <section id="first-section" class=" mg-b mg-t relative">
+    <section id="first-section" class=" mg-b relative">
       <img class="image-fit" src="img/assets/header.jpg" alt="" />
       <article class="absolute place-top">
         <img class="image-fit" src="img/assets/natural_slowlife.png" alt="" srcset="" />
@@ -37,74 +45,113 @@
         <p>l'essence même du bien-être</p>
         <button>Découvrir</button>
       </article>
+      <p class="absolute adresses">TEL: +33 (0)2 99 08 50 50 - RESA.HOTEL@YRNET.COM</p>
     </section>
+
     <!-- Second Section -->
-    <section id="second-section" class="relative mg-b">
-      <img class="image-fit" src="img/assets/Shoot1-433-15.jpg" alt="" />
+    <section id="second-section" class="relative mg-b upper-case">
+      <img class="image-fit woman-in-room" src="img/assets/Shoot1-433-15.jpg" alt="" />
       <img class="absolute litle-pic place-top" src="img/assets/suite6-354-15.jpg" alt="" />
-      <article class="absolute place-top">
-        <p>9:23</p>
-        <h2>Un doux Réveil</h2>
-        <p>Laissez La nature vous Réveiller tout en douceur</p>
+      <article class="absolute place-top ">
+        <h2>9:23</h2>
+        <h3>Un doux Réveil</h2>
+          <p>Laissez La nature</p>
+          <p>vous Réveiller tout en douceur</p>
       </article>
     </section>
+
     <!-- Third Section -->
-    <section id="third-section mg-b" class="relative">
-      <img class="image-fit" src="img/assets/YRshoot1-2322-15.jpg" alt="" />
+    <section id="third-section" class="relative upper-case mg-b">
+      <img class="image-fit chill-picture absolute" src="img/assets/YRshoot1-2322-15.jpg" alt="" />
       <!-- transform 90degree-->
-      <img class="image-fit absolute" src="img/assets/chambre22-123-15.jpg" alt="" />
+      <img class="image-fit absolute room-picture" src="img/assets/chambre22-123-15.jpg" alt="" />
       <article class="absolute place-top">
-        <p>11:07</p>
-        <h2>DETENTE. RELAXATION. SILENCE.</h2>
+        <p class="hour">11:07</p>
+        <h2>detente.</h2>
+        <h3>relaxation.</h3>
+        <h4>silence.</h4>
         <p>
-          SE RESSOURCER, SE RETROUVER... UN RITUEL POUR SOI POUR UNE DOUCE
-          ENTRÉE EN MATIÈRE.
-        </p>
+          se ressourcer, se retrouver ...</p>
+        <p>un rituel pour soi pour une</p>
+        <p>douce entrée en matière.</p>
+
       </article>
     </section>
+
     <!-- Section Fourth -->
     <section id="fourth-section" class="relative">
-      <article class="cards">
+      <section class="cards ">
         <img class="image-fit" src="img/assets/offre1.jpg " alt="" />
+        <main>
+          <h2>Noel à la gré des landes</h2>
+          <p class="find-why">Le bien être s'invite a noel</p>
+          <article class="flex">
+            <p>490 EUR</p>
+            <div class="flex">
+              <p>2 personnes</p>
+              <p>1 nuitée</p>
+            </div>
+          </article>
+        </main>
 
-        <h2>Noel à la gré des landes</h2>
-        <p>Le bien etre s'invite a noel</p>
-        <article>
-          <p>Prix</p>
-          <p>nb persone</p>
-          <p>nb nuit</p>
-        </article>
         <button>En savoir plus</button>
-      </article>
-      <article class="cards">
+      </section>
+      <section class="cards">
         <img class="image-fit" src="img/assets/offre2.jpg " alt="" />
+        <main>
+          <h2>Réveillon de la saint-sylvestre</h2>
+          <p class="card-description">Un séjour d'exception pour la fin de l'année à partager avec
+            vos amis ou votre famille.
+            Réservation jusqu'au 20/12/2017
+          </p>
+          <article class="flex">
+            <p>490 EUR</p>
+            <div class="flex">
+              <p>2 personnes</p>
+              <p>1 nuitée</p>
+            </div>
+          </article>
+        </main>
 
-        <h2>Noel à la gré des landes</h2>
-        <p>Le bien etre s'invite a noel</p>
-        <article>
-          <p>Prix</p>
-          <p>nb persone</p>
-          <p>nb nuit</p>
-        </article>
         <button>En savoir plus</button>
-      </article>
-      <article class="cards">
+
+
+      </section>
+      <section class="cards">
         <img class="image-fit" src="img/assets/offre3.jpg " alt="" />
+        <main>
+          <h2>Coffret Cadeaux</h2>
+          <article class="flex card-description">
+            <ul>
+              <li>Séjour</li>
+              <li>Soins & Bien être</li>
+              <li>Gastronomie</li>
+            </ul>
+            <ul>
+              <li>Cabane d'exception</li>
+              <li>Chèque Cadeau</li>
+            </ul>
+          </article>
 
-        <h2>Noel à la gré des landes</h2>
-        <p>Le bien etre s'invite a noel</p>
-        <article>
-          <p>Prix</p>
-          <p>nb persone</p>
-          <p>nb nuit</p>
-        </article>
+          <article class="flex">
+            <p>490 EUR</p>
+            <div class="flex">
+              <p>2 personnes</p>
+
+            </div>
+          </article>
+        </main>
+
         <button>En savoir plus</button>
-      </article>
+
+
+      </section>
     </section>
   </main>
+
   <footer class="flex">
     <img class="logo" src="img/assets/logo.png" alt=" logo yves rocher la gré des landes" />
-    <p>TEL: +33 (0)2 99 08 50 50 - RESA.HOTEL@YRNET.COM</p>
+
   </footer>
 </body>
 
