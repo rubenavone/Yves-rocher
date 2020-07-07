@@ -1,3 +1,51 @@
+@font-face {
+    font-family: 'avant_gardedemiregular';
+    src: url('avantgardedemi-webfont.woff2') format('woff2'),
+        url('avantgardedemi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'brandon_grotesquelight';
+    src: url('brandon_light-webfont.woff2') format('woff2'),
+        url('brandon_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'brandon_grotesquemedium';
+    src: url('brandon_med-webfont.woff2') format('woff2'),
+        url('brandon_med-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'linotype_didotroman';
+    src: url('didotlh-roman-webfont.woff2') format('woff2'),
+        url('didotlh-roman-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*
+Color
+*/
 $off-white: #f9f9f9;
 $green: #8a962b;
 $brown: #624835;
@@ -5,3 +53,12 @@ $blue: #7998bc;
 $white: #fff;
 $grey: #00000029;
 $black: #000000;
+
+
+$primary: $off-white;
+$secondary: $green;
+
+/*font*/
+
+$avant: "avantgardedemi";
+$brandon : "brandon";

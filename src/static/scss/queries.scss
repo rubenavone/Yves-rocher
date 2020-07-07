@@ -1,0 +1,29 @@
+@import "variables.scss";
+
+@media (min-width: 576px) {
+    body {
+        font-size: 4vw;
+        background-color: $green;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 4vw;
+        background-color: $off-white;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        font-size: 2vw;
+        background-color: $black;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 2vw;
+        background-color: $blue;
+    }
+}
