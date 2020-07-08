@@ -15,7 +15,7 @@ body {
     .queries-xl {
         position: absolute;
         display: none;
-        font-size: 2vw;
+        font-size: 2rem;
 
         z-index: 999;
         top: 7%;
@@ -24,7 +24,7 @@ body {
 
     .queries-xsm {
         position: absolute;
-        font-size: 2vw;
+        font-size: 2rem;
         z-index: 999;
         top: 7%;
         bottom: 0%;
@@ -84,7 +84,6 @@ body {
 header {
 
     flex-direction: column;
-
 
     .flex {
         display: flex;
@@ -154,15 +153,11 @@ header {
         }
     }
 
-
     .adresses {
         right: 0px;
         bottom: -1%;
-        font-size: 2vw;
+        font-size: 0.7rem;
     }
-
-
-
 }
 
 
@@ -212,7 +207,6 @@ header {
             text-shadow: 1px 1px 1px $black;
 
         }
-
     }
 }
 
@@ -270,79 +264,49 @@ header {
 }
 
 #fourth-section {
-    display: flex;
-    flex-wrap: wrap;
+    background-color: $off-white;
+    align-self: center;
 
-    width: 100vw;
-    font-family: "brandon_grotesquelight",
-        'linotype_didotroman',
-        Arial,
-        Helvetica,
-        sans-serif;
+    p,
+    ul {
+        color: $brown;
+    }
 
     section {
-        padding: 2%;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        align-self: center;
 
-        width: 100vw;
+        width: 100%;
+        margin-bottom: 2rem;
 
         img {
-            min-height: 100%;
-            object-fit: cover;
-            object-position: top;
+            width: 100%;
+            object-fit: contain;
         }
 
         main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5% 5% 0 5%;
 
-            color: $brown;
-
-            h2,
-            p,
-            article {
-                padding: 0% 7% 0% 4%;
-
-            }
-
-            h2 {
-                color: $black;
-            }
-
-            ul {
-                flex-direction: column;
-            }
 
             article {
+                display: flex;
                 justify-content: space-between;
+                width: 100%;
 
-
-                p {
-                    align-self: center;
-                    color: $brown;
-                }
-
-                div {
-                    flex-direction: column;
-                    width: 100%;
-                    margin-left: 50%;
-                    line-height: 0;
-                }
             }
-        }
-
-
-        button {
-            align-self: center;
-            background-color: $green;
-            color: $off-white;
-            border: none;
-            padding: 2% 30%;
         }
     }
 
+    button {
+        padding: 4% 20%;
+        background-color: $green;
+        border: none;
+        color: $off-white;
+        text-transform: uppercase;
+        font-size: 1rem;
 
+    }
 }
 
 footer {
@@ -355,17 +319,10 @@ footer {
     }
 
     .logo {
-
         margin-left: auto;
         width: 25vw;
-
     }
 
-    p {
-        font-size: 2vw;
-        align-self: flex-end;
-        margin-right: auto;
-    }
 }
 
 @import "queries.scss";

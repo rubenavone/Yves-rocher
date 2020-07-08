@@ -35,13 +35,13 @@ body {
   body .queries-xl {
     position: absolute;
     display: none;
-    font-size: 2vw;
+    font-size: 2rem;
     z-index: 999;
     top: 7%;
     bottom: 0%; }
   body .queries-xsm {
     position: absolute;
-    font-size: 2vw;
+    font-size: 2rem;
     z-index: 999;
     top: 7%;
     bottom: 0%; }
@@ -129,7 +129,7 @@ header {
   #first-section .adresses {
     right: 0px;
     bottom: -1%;
-    font-size: 2vw; }
+    font-size: 0.7rem; }
 
 /*second section*/
 #second-section {
@@ -195,47 +195,33 @@ header {
       text-shadow: 1px 1px 1px black; }
 
 #fourth-section {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100vw;
-  font-family: "brandon_grotesquelight", 'linotype_didotroman', Arial, Helvetica, sans-serif; }
+  background-color: #f9f9f9;
+  align-self: center; }
+  #fourth-section p,
+  #fourth-section ul {
+    color: #624835; }
   #fourth-section section {
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-self: center;
-    width: 100vw; }
+    width: 100%;
+    margin-bottom: 2rem; }
     #fourth-section section img {
-      min-height: 100%;
-      object-fit: cover;
-      object-position: top; }
+      width: 100%;
+      object-fit: contain; }
     #fourth-section section main {
-      color: #624835; }
-      #fourth-section section main h2,
-      #fourth-section section main p,
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5% 5% 0 5%; }
       #fourth-section section main article {
-        padding: 0% 7% 0% 4%; }
-      #fourth-section section main h2 {
-        color: #000000; }
-      #fourth-section section main ul {
-        flex-direction: column; }
-      #fourth-section section main article {
-        justify-content: space-between; }
-        #fourth-section section main article p {
-          align-self: center;
-          color: #624835; }
-        #fourth-section section main article div {
-          flex-direction: column;
-          width: 100%;
-          margin-left: 50%;
-          line-height: 0; }
-    #fourth-section section button {
-      align-self: center;
-      background-color: #8a962b;
-      color: #f9f9f9;
-      border: none;
-      padding: 2% 30%; }
+        display: flex;
+        justify-content: space-between;
+        width: 100%; }
+  #fourth-section button {
+    padding: 4% 20%;
+    background-color: #8a962b;
+    border: none;
+    color: #f9f9f9;
+    text-transform: uppercase;
+    font-size: 1rem; }
 
 footer {
   justify-content: space-around; }
@@ -245,10 +231,6 @@ footer {
   footer .logo {
     margin-left: auto;
     width: 25vw; }
-  footer p {
-    font-size: 2vw;
-    align-self: flex-end;
-    margin-right: auto; }
 
 @font-face {
   font-family: 'avant_gardedemiregular';
@@ -276,10 +258,10 @@ Color
 /*font*/
 @media (min-width: 576px) {
   body {
-    font-size: 4vw; }
+    font-size: 1.5rem; }
     body .queries-sm {
       display: block;
-      font-size: 2vw; }
+      font-size: 1rem; }
     body .queries-xsm {
       display: none; }
     body header {
@@ -297,10 +279,10 @@ Color
      sliders
   /* phone at first section and none footer*/
   body {
-    font-size: 2vw; }
+    font-size: 1.3rem; }
     body .queries-md {
       display: block;
-      font-size: 2vw; }
+      font-size: 1rem; }
     body .queries-xsm,
     body .queries-sm {
       display: none; }
@@ -315,38 +297,38 @@ Color
     right: 0px;
     bottom: 4%;
     color: #f9f9f9; }
-  main #second-section article {
-    margin-left: 60%; }
-  main #third-section article {
-    margin-left: 2%; }
-    main #third-section article h2,
-    main #third-section article h3,
-    main #third-section article h4 {
-      text-align: center; }
-    main #third-section article p {
-      color: #000000;
-      text-shadow: none;
-      text-align: left; }
-  main #fourth-section {
-    flex-wrap: nowrap;
-    font-size: 1.5; }
-    main #fourth-section section {
-      align-self: baseline; }
-      main #fourth-section section main .card-description {
-        min-height: 17.5vw; }
-        main #fourth-section section main .card-description ul {
-          min-height: 16.4vw; }
-      main #fourth-section section main .find-why {
-        min-height: 15vw; }
-      main #fourth-section section main div {
-        margin-left: 30%; }
+  main #second-section {
+    margin: 5% 10%; }
+    main #second-section article {
+      margin-left: 60%; }
+    main #second-section .woman-in-room {
+      position: absolute;
+      left: -6%;
+      width: 71%; }
+    main #second-section .litle-pic {
+      width: 47%;
+      right: 10%;
+      height: 30%;
+      top: 30%; }
+  main #third-section {
+    margin: 0% 10%; }
+    main #third-section article {
+      margin-left: 2%; }
+      main #third-section article h2,
+      main #third-section article h3,
+      main #third-section article h4 {
+        text-align: center; }
+      main #third-section article p {
+        color: #000000;
+        text-shadow: none;
+        text-align: left; }
 
   footer .logo {
     margin-left: auto;
     width: 15vw; } }
 @media (min-width: 992px) {
   body {
-    font-size: 2vw; }
+    font-size: 1rem; }
     body .queries-lg {
       display: block; }
     body .queries-xsm,
@@ -362,26 +344,48 @@ Color
     width: 100%;
     background-color: #f9f9f9; }
     header nav .logo {
-      width: 10vw; } }
-@media (min-width: 1200px) {
+      width: 10vw; }
+
+  #fourth-section {
+    background-color: #f9f9f9;
+    align-self: center;
+    display: flex; }
+    #fourth-section section img {
+      width: 75%;
+      position: sticky;
+      top: 4%;
+      left: 12.5%;
+      margin: auto; }
+    #fourth-section section main {
+      display: flex;
+      align-items: center;
+      padding: 5% 5% 5% 5%;
+      margin-bottom: 5%;
+      margin-left: 45px;
+      margin-right: 45px;
+      box-shadow: 0px -3px 20px #00000029; }
+      #fourth-section section main h2 {
+        height: 50px; }
+      #fourth-section section main article {
+        display: flex;
+        justify-content: space-between;
+        width: 100%; }
+        #fourth-section section main article button {
+          margin-top: 50px; }
+    #fourth-section .card-description {
+      min-height: 100px;
+      font-size: 1.2rem; }
+    #fourth-section .price {
+      height: 115px; } }
+@media (min-width: 992px) and (min-width: 1200px) {
   body {
-    font-size: 1.5vw; }
+    font-size: 1.5rem; }
     body .queries-xsm,
     body .queries-sm,
     body .queries-md,
     body .queries-lg {
       display: none; }
     body .queries-xl {
-      display: block; }
-
-  main #fourth-section {
-    flex-wrap: nowrap;
-    font-size: 1.5; }
-    main #fourth-section section {
-      align-self: baseline; }
-      main #fourth-section section main .find-why {
-        min-height: 17.5vw; }
-      main #fourth-section section main div {
-        margin-left: 30%; } }
+      display: block; } }
 
 /*# sourceMappingURL=main.css.map */
