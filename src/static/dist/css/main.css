@@ -57,9 +57,9 @@ body {
     object-position: bottom;
     z-index: -1; }
   body .mg-t {
-    margin-top: 5%; }
+    margin-top: 1%; }
   body .mg-b {
-    margin-bottom: 5%; }
+    margin-bottom: 1%; }
   body .logo {
     max-width: 50%;
     align-self: center; }
@@ -290,38 +290,73 @@ Color
   header nav .logo {
     width: 15vw; }
 
-  main #first-section article {
-    top: 25%;
-    left: 15%; }
-  main #first-section .adresses {
-    right: 0px;
-    bottom: 4%;
-    color: #f9f9f9; }
+  main #first-section {
+    margin-top: 0%; }
+    main #first-section article {
+      top: 25%;
+      left: 15%; }
+    main #first-section .adresses {
+      right: 0px;
+      bottom: 4%;
+      color: #f9f9f9; }
   main #second-section {
-    margin: 5% 10%; }
+    margin: 0% 10%;
+    font-size: 1rem;
+    overflow: visible; }
     main #second-section article {
-      margin-left: 60%; }
+      top: -10%;
+      left: 22%;
+      position: relative; }
+      main #second-section article h3 {
+        margin-left: unset; }
+      main #second-section article p {
+        font-size: 0.7rem; }
     main #second-section .woman-in-room {
       position: absolute;
       left: -6%;
       width: 71%; }
     main #second-section .litle-pic {
-      width: 47%;
-      right: 10%;
-      height: 30%;
-      top: 30%; }
+      width: 53%;
+      right: -3%;
+      height: 29%;
+      top: 32%;
+      object-fit: cover;
+      object-position: center; }
   main #third-section {
-    margin: 0% 10%; }
+    margin: 0% 10%;
+    overflow: visible; }
     main #third-section article {
-      margin-left: 2%; }
-      main #third-section article h2,
-      main #third-section article h3,
-      main #third-section article h4 {
+      margin-left: 15%; }
+      main #third-section article h2 {
         text-align: center; }
+      main #third-section article h3,
+      main #third-section article h4,
+      main #third-section article h5 {
+        text-align: center;
+        font-size: 1rem;
+        line-height: 0;
+        margin: 10px; }
       main #third-section article p {
         color: #000000;
         text-shadow: none;
-        text-align: left; }
+        text-align: center;
+        font-size: 0.7rem; }
+    main #third-section .room-picture {
+      left: 50%;
+      top: 5%;
+      width: 38%;
+      height: 107%;
+      object-fit: cover;
+      object-position: revert; }
+    main #third-section .chill-picture {
+      transform: scaleX(-1);
+      width: 53%;
+      z-index: 0;
+      top: 45%;
+      object-fit: contain;
+      object-position: center;
+      left: 10%;
+      position: relative; }
 
   footer .logo {
     margin-left: auto;
