@@ -34,9 +34,19 @@
 
     #first-section {
         article {
-            font-size: 1rem;
-            left: 15%;
+            font-size: 0.8rem;
+            left: 10%;
             top: 25%;
+
+            img {
+                width: 30vw;
+                margin-bottom: 7%;
+            }
+
+            button {
+                margin-top: 4%;
+                padding: 4% 15%;
+            }
         }
 
         .adresses {
@@ -53,6 +63,19 @@
             }
         }
 
+    }
+
+    #fourth-section {
+
+        button {
+            padding: 4% 30%;
+            background-color: $green;
+            border: none;
+            color: $off-white;
+            text-transform: uppercase;
+            font-size: 1rem;
+            min-width: 250px;
+        }
     }
 }
 
@@ -83,110 +106,106 @@
         }
     }
 
-    main {
-        #first-section {
-            margin-top: 0%;
 
-            article {
-                top: 25%;
-                left: 15%;
-            }
+    #first-section {
+        margin-top: 0%;
 
-            .adresses {
-                right: 0px;
-                bottom: 4%;
-                color: $off-white;
-
-            }
+        article {
+            top: 30%;
+            left: 15%;
         }
 
-        #second-section {
-            margin: 0% 10%;
-            font-size: 1rem;
-            overflow: visible;
-
-
-            article {
-                top: -10%;
-                left: 22%;
-                position: relative;
-
-                h3 {
-                    margin-left: unset;
-                }
-
-                p {
-                    font-size: 0.7rem;
-                }
-
-            }
-
-            .woman-in-room {
-                position: absolute;
-                left: -6%;
-                width: 71%;
-            }
-
-            .litle-pic {
-                width: 53%;
-                right: -3%;
-                height: 29%;
-                top: 32%;
-                object-fit: cover;
-                object-position: center;
-            }
-        }
-
-        #third-section {
-
-            overflow: visible;
-
-            .room-picture {
-                left: 50%;
-                top: 5%;
-                width: 38%;
-                height: 107%;
-                object-fit: cover;
-                object-position: revert;
-            }
-
-            .chill-picture {
-                width: 53%;
-                top: 45%;
-
-            }
-
-            article {
-                margin-left: 15%;
-
-
-                h2 {
-                    text-align: center;
-
-                }
-
-                h3,
-                h4,
-                h5 {
-                    text-align: center;
-                    font-size: 1rem;
-                    line-height: 0;
-                    margin: 10px;
-                }
-
-                p {
-                    color: $black;
-                    text-shadow: none;
-                    text-align: center;
-                    font-size: 0.7rem;
-                }
-
-
-            }
-
-
+        .adresses {
+            right: 0px;
+            bottom: 5%;
+            color: $off-white;
+            text-shadow: none;
         }
     }
+
+    #second-section {
+        margin: 0% 10%;
+        font-size: 1rem;
+        overflow: visible;
+
+
+        article {
+            top: -0%;
+            left: 3%;
+            position: relative;
+        }
+
+        .woman-in-room {
+            position: absolute;
+            left: -6%;
+            width: 71%;
+        }
+
+        .litle-pic {
+            width: 53%;
+            right: -3%;
+            height: 29%;
+            top: 32%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+    }
+
+    #third-section {
+
+        overflow: visible;
+        margin-top: -10%;
+
+        .room-picture {
+            left: 50%;
+            top: 5%;
+            width: 38%;
+            height: 107%;
+            object-fit: cover;
+            object-position: revert;
+        }
+
+        .chill-picture {
+            width: 53%;
+            top: 45%;
+
+        }
+
+        article {
+            left: -35%;
+            top: 5%;
+
+            h2 {
+                text-align: center;
+
+            }
+
+            h3,
+            h4,
+            h5 {
+                text-align: center;
+                font-size: 1rem;
+                line-height: 0;
+                margin: 10px;
+            }
+
+            div {
+                top: 100%;
+                left: 32%;
+                color: $black;
+                text-shadow: none;
+                text-align: center;
+                font-size: 1rem;
+            }
+
+
+        }
+
+
+    }
+
+
 
     footer {
         .logo {
@@ -229,12 +248,16 @@
         }
     }
 
+    #first-section {}
+
+    #second-section {}
+
+    #third-section {}
+
     #fourth-section {
         background-color: $off-white;
         align-self: center;
         display: flex;
-
-
 
         section {
             img {
@@ -275,13 +298,10 @@
             font-size: 1.2rem;
         }
 
-        .price {
+        .card-size {
             height: 115px;
         }
-
     }
-
-
 }
 
 @media (min-width: 1200px) {

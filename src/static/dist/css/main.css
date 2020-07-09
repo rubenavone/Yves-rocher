@@ -70,6 +70,11 @@ body {
     top: 0; }
   body .upper-case {
     text-transform: uppercase; }
+  body p {
+    color: #624835;
+    text-shadow: 1px 1px 1px #fff; }
+  body button {
+    cursor: pointer; }
 
 /*Global*/
 /*Header*/
@@ -93,11 +98,11 @@ header {
   header button {
     font-family: "brandon_grotesquelight", 'linotype_didotroman', Arial, Helvetica, sans-serif;
     font-size: large;
-    padding: 15px 30px 16px 30px;
+    padding: 2% 5%;
     background-color: #8a962b;
     border: none;
     align-self: center;
-    margin-top: 3vw;
+    margin-top: 2%;
     color: #f9f9f9; }
 
 /* First section*/
@@ -109,12 +114,13 @@ header {
   #first-section article {
     display: flex;
     flex-direction: column;
-    color: #7998bc;
-    text-shadow: 1px 1px 1px #fff;
     left: 5%;
     top: 15%;
     line-height: 0;
     text-align: center; }
+    #first-section article p {
+      color: #7998bc;
+      text-shadow: 1px 1px 1px #fff; }
     #first-section article img {
       width: 50vw;
       margin-top: 1%;
@@ -123,7 +129,7 @@ header {
     #first-section article button {
       background-color: unset;
       border: 1px solid #00000029;
-      padding: 5px 5px 5px 5px;
+      padding: 2% 3%;
       align-self: center;
       color: #7998bc;
       text-shadow: 1px 1px 1px #fff; }
@@ -157,13 +163,14 @@ header {
     width: 100%;
     margin-left: 7%;
     font-size: 0.9rem; }
-    #second-section article h2,
+    #second-section article h2 {
+      color: #00000029;
+      margin-left: 44%; }
     #second-section article h3 {
       margin-left: 44%; }
     #second-section article div {
       line-height: 5px;
       color: #f9f9f9;
-      text-shadow: 1px 1px 1px #000000;
       position: absolute;
       top: 205%;
       left: -5%;
@@ -202,14 +209,15 @@ header {
       text-shadow: none; }
     #third-section article h2,
     #third-section article h3,
-    #third-section article h4 {
-      text-align: left; }
+    #third-section article h4,
+    #third-section article h5 {
+      text-align: left;
+      font-size: 1rem; }
     #third-section article div {
       position: absolute;
       top: 10%;
       left: 30%;
       color: #f9f9f9;
-      text-shadow: 1px 1px 1px black;
       line-height: 5px;
       font-size: 0.7rem; }
 
@@ -242,12 +250,15 @@ header {
         justify-content: space-between;
         width: 100%; }
   #fourth-section button {
-    padding: 4% 20%;
+    padding: 4% 10%;
     background-color: #8a962b;
     border: none;
     color: #f9f9f9;
     text-transform: uppercase;
-    font-size: 1rem; }
+    font-size: 0.8rem;
+    min-width: 250px; }
+  #fourth-section .price-bold {
+    font-size: 2rem; }
 
 footer {
   justify-content: space-around; }
@@ -302,15 +313,30 @@ Color
         margin-right: 2%; }
 
   #first-section article {
-    font-size: 1rem;
-    left: 15%;
+    font-size: 0.8rem;
+    left: 10%;
     top: 25%; }
+    #first-section article img {
+      width: 30vw;
+      margin-bottom: 7%; }
+    #first-section article button {
+      margin-top: 4%;
+      padding: 4% 15%; }
   #first-section .adresses {
     bottom: 0%; }
 
   #second-section article div {
     right: -50%;
-    top: 100%; } }
+    top: 100%; }
+
+  #fourth-section button {
+    padding: 4% 30%;
+    background-color: #8a962b;
+    border: none;
+    color: #f9f9f9;
+    text-transform: uppercase;
+    font-size: 1rem;
+    min-width: 250px; } }
 @media (min-width: 768px) {
   /* sticky nav
      sliders
@@ -327,66 +353,69 @@ Color
   header nav .logo {
     width: 15vw; }
 
-  main #first-section {
+  #first-section {
     margin-top: 0%; }
-    main #first-section article {
-      top: 25%;
+    #first-section article {
+      top: 30%;
       left: 15%; }
-    main #first-section .adresses {
+    #first-section .adresses {
       right: 0px;
-      bottom: 4%;
-      color: #f9f9f9; }
-  main #second-section {
+      bottom: 5%;
+      color: #f9f9f9;
+      text-shadow: none; }
+
+  #second-section {
     margin: 0% 10%;
     font-size: 1rem;
     overflow: visible; }
-    main #second-section article {
-      top: -10%;
-      left: 22%;
+    #second-section article {
+      top: -0%;
+      left: 3%;
       position: relative; }
-      main #second-section article h3 {
-        margin-left: unset; }
-      main #second-section article p {
-        font-size: 0.7rem; }
-    main #second-section .woman-in-room {
+    #second-section .woman-in-room {
       position: absolute;
       left: -6%;
       width: 71%; }
-    main #second-section .litle-pic {
+    #second-section .litle-pic {
       width: 53%;
       right: -3%;
       height: 29%;
       top: 32%;
       object-fit: cover;
       object-position: center; }
-  main #third-section {
-    overflow: visible; }
-    main #third-section .room-picture {
+
+  #third-section {
+    overflow: visible;
+    margin-top: -10%; }
+    #third-section .room-picture {
       left: 50%;
       top: 5%;
       width: 38%;
       height: 107%;
       object-fit: cover;
       object-position: revert; }
-    main #third-section .chill-picture {
+    #third-section .chill-picture {
       width: 53%;
       top: 45%; }
-    main #third-section article {
-      margin-left: 15%; }
-      main #third-section article h2 {
+    #third-section article {
+      left: -35%;
+      top: 5%; }
+      #third-section article h2 {
         text-align: center; }
-      main #third-section article h3,
-      main #third-section article h4,
-      main #third-section article h5 {
+      #third-section article h3,
+      #third-section article h4,
+      #third-section article h5 {
         text-align: center;
         font-size: 1rem;
         line-height: 0;
         margin: 10px; }
-      main #third-section article p {
+      #third-section article div {
+        top: 100%;
+        left: 32%;
         color: #000000;
         text-shadow: none;
         text-align: center;
-        font-size: 0.7rem; }
+        font-size: 1rem; }
 
   footer .logo {
     margin-left: auto;
@@ -440,7 +469,7 @@ Color
     #fourth-section .card-description {
       min-height: 100px;
       font-size: 1.2rem; }
-    #fourth-section .price {
+    #fourth-section .card-size {
       height: 115px; } }
 @media (min-width: 1200px) {
   body {

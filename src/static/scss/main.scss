@@ -76,6 +76,15 @@ body {
     .upper-case {
         text-transform: uppercase;
     }
+
+    p {
+        color: $brown;
+        text-shadow: 1px 1px 1px $white;
+    }
+
+    button {
+        cursor: pointer;
+    }
 }
 
 /*Global*/
@@ -111,11 +120,11 @@ header {
     button {
         font-family: "brandon_grotesquelight", 'linotype_didotroman', Arial, Helvetica, sans-serif;
         font-size: large;
-        padding: 15px 30px 16px 30px;
+        padding: 2% 5%;
         background-color: $secondary;
         border: none;
         align-self: center;
-        margin-top: 3vw;
+        margin-top: 2%;
         color: $off-white;
     }
 }
@@ -130,13 +139,15 @@ header {
     article {
         display: flex;
         flex-direction: column;
-        color: $blue;
-        text-shadow: 1px 1px 1px $white;
         left: 5%;
         top: 15%;
         line-height: 0;
         text-align: center;
 
+        p {
+            color: $blue;
+            text-shadow: 1px 1px 1px $white;
+        }
 
         img {
             width: 50vw;
@@ -148,7 +159,7 @@ header {
         button {
             background-color: unset;
             border: 1px solid $grey;
-            padding: 5px 5px 5px 5px;
+            padding: 2% 3%;
             align-self: center;
             color: $blue;
             text-shadow: 1px 1px 1px $white;
@@ -198,7 +209,11 @@ header {
         margin-left: 7%;
         font-size: 0.9rem;
 
-        h2,
+        h2 {
+            color: $grey;
+            margin-left: 44%;
+        }
+
         h3 {
             margin-left: 44%;
         }
@@ -206,7 +221,7 @@ header {
         div {
             line-height: 5px;
             color: $off-white;
-            text-shadow: 1px 1px 1px $black;
+
             position: absolute;
             top: 205%;
             left: -5%;
@@ -253,7 +268,6 @@ header {
         font-size: 0.9rem;
         width: 100%;
 
-
         .hour {
             margin-left: 10%;
             color: $grey;
@@ -262,8 +276,10 @@ header {
 
         h2,
         h3,
-        h4 {
+        h4,
+        h5 {
             text-align: left;
+            font-size: 1rem;
         }
 
         div {
@@ -271,7 +287,6 @@ header {
             top: 10%;
             left: 30%;
             color: $off-white;
-            text-shadow: 1px 1px 1px black;
             line-height: 5px;
             font-size: 0.7rem;
         }
@@ -321,13 +336,18 @@ header {
     }
 
     button {
-        padding: 4% 20%;
+        padding: 4% 10%;
         background-color: $green;
         border: none;
         color: $off-white;
         text-transform: uppercase;
-        font-size: 1rem;
+        font-size: 0.8rem;
+        min-width: 250px;
+    }
 
+    .price-bold {
+
+        font-size: 2rem;
     }
 }
 
