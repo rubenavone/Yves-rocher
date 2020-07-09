@@ -31,6 +31,29 @@
             }
         }
     }
+
+    #first-section {
+        article {
+            font-size: 1rem;
+            left: 15%;
+            top: 25%;
+        }
+
+        .adresses {
+            bottom: 0%;
+        }
+    }
+
+    #second-section {
+        article {
+            div {
+
+                right: -50%;
+                top: 100%;
+            }
+        }
+
+    }
 }
 
 @media (min-width: 768px) {
@@ -115,8 +138,23 @@
         }
 
         #third-section {
-            margin: 0% 10%;
+
             overflow: visible;
+
+            .room-picture {
+                left: 50%;
+                top: 5%;
+                width: 38%;
+                height: 107%;
+                object-fit: cover;
+                object-position: revert;
+            }
+
+            .chill-picture {
+                width: 53%;
+                top: 45%;
+
+            }
 
             article {
                 margin-left: 15%;
@@ -146,43 +184,17 @@
 
             }
 
-            .room-picture {
-                left: 50%;
-                top: 5%;
-                width: 38%;
-                height: 107%;
-                object-fit: cover;
-                object-position: revert;
-            }
 
-            .chill-picture {
-                transform: scaleX(-1);
-                width: 53%;
-                z-index: 0;
-                top: 45%;
-                object-fit: contain;
-                object-position: center;
-                left: 10%;
-                position: relative;
-            }
         }
-
-
-
-
     }
-
-
 
     footer {
         .logo {
 
             margin-left: auto;
             width: 15vw;
-
         }
     }
-
 }
 
 @media (min-width: 992px) {
@@ -269,23 +281,25 @@
 
     }
 
-    @media (min-width: 1200px) {
-        body {
 
-            .queries-xsm,
-            .queries-sm,
-            .queries-md,
-            .queries-lg {
-                display: none;
-            }
+}
 
-            .queries-xl {
-                display: block;
-            }
+@media (min-width: 1200px) {
+    body {
 
-            font-size: 1.5rem;
-
+        .queries-xsm,
+        .queries-sm,
+        .queries-md,
+        .queries-lg {
+            display: none;
         }
 
+        .queries-xl {
+            display: block;
+        }
+
+        font-size: 1.5rem;
+
     }
+
 }
