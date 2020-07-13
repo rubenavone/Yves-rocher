@@ -236,7 +236,7 @@
   }
 
   header {
-    height: 8vw;
+    height: 15vh;
     position: fixed;
     top: 0;
     z-index: 2;
@@ -250,7 +250,9 @@
     }
   }
 
-  #first-section {}
+  #first-section {
+    height: 100vh;
+  }
 
   #second-section {}
 
