@@ -10,12 +10,11 @@
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="stylesheet" type="text/css" href="static/dist/css/main.css" />
-  <script src="static/dist/js/script.js"></script>
+  
 </head>
 
 <body>
- 
-         
+       
   <!-- Media queries viewer -->
   <p class="queries-xsm">
     < 576px</p> <p class="queries-sm">576px
@@ -38,10 +37,24 @@
 
   <main>
     <!-- First Section -->
-    <section id="first-section" class="relative">
-      <img class="image-fit" src="img/assets/header.jpg" alt="" />
+    <section id="first-section" >
+      <div class="slider">
+      <article class="box1 box anchor" id="first-pic">
+        <img class="image-fit"src="img/assets/header.jpg" alt="" />
+      </article>
+      <article class="box2 box anchor"  id="second-pic" >
+        <img class="image-fit" src="img/assets/header2.jpg" alt="" />
+      </article>
+    </div>
+      
+
+      <!-- <img class="absolute arrow-left" src="img/assets/arrow.svg" alt="" srcset="">
+      <img class="absolute arrow-right" src="img/assets/arrow.svg" alt="" srcset=""> -->
+
       <article class="absolute place-top">
-        <img class="image-fit" src="img/assets/natural_slowlife.png" alt="" srcset="" />
+        <a href="#first-pic"><img class="absolute arrow-left " src="img/assets/arrow.svg" alt="" srcset=""></a>
+        <a href="#second-pic"><img class="absolute arrow-right " src="img/assets/arrow.svg" alt="" srcset=""></a>
+        <img class="image-fit slow-life" src="img/assets/natural_slowlife.png" alt="" srcset="" />
         <p>Un temps pour retrouver, dans la nature.</p>
         <p>l'essence même du bien-être</p>
         <button>Découvrir</button>
@@ -99,9 +112,8 @@
           </article>
           <button>En savoir plus</button>
         </main>
-
-
       </section>
+      
       <section>
         <img src="img/assets/offre2.jpg " alt="" />
         <main>
@@ -156,6 +168,9 @@
     <img class="logo" src="img/assets/logo.png" alt=" logo yves rocher la gré des landes" />
 
   </footer>
+  <script src="static/dist/js/script.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
 </body>
 
 </html>

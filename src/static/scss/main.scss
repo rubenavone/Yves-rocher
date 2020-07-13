@@ -126,6 +126,10 @@ header {
     }
 }
 
+a::after {
+    margin-top: -100px;
+}
+
 /* First section*/
 #first-section {
     height: 60vw;
@@ -133,6 +137,52 @@ header {
         sans-serif;
     margin-top: 2%;
     margin-bottom: 5%;
+    display: flex;
+    width: 300vw;
+    transition: all 0.25s ease-in;
+    scroll-behavior: smooth;
+
+    .slider {
+        width: 200vw;
+        display: flex;
+        height: 55rem;
+        transition: all 0.25s ease-in;
+        transform: translatex(0);
+
+
+
+        .box {
+            height: 100%;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .box1 {
+            object-fit: contain;
+            width: 100vw;
+
+            img {
+                max-width: unset;
+                width: 100vw;
+                visibility: visible;
+                margin-top: 115px;
+            }
+        }
+
+        .box2 {
+            width: 100vw;
+
+            img {
+                max-width: unset;
+                width: 100vw;
+                visibility: visible;
+                margin-top: 115px;
+            }
+        }
+
+
+    }
 
     article {
         display: flex;
@@ -147,7 +197,7 @@ header {
             text-shadow: 1px 1px 1px $white;
         }
 
-        img {
+        .slow-life {
             width: 50vw;
             margin-top: 1%;
             z-index: 1;
@@ -162,6 +212,22 @@ header {
             color: $blue;
             text-shadow: 1px 1px 1px $white;
         }
+
+
+    }
+
+    .anchor {
+        margin-top: -115px;
+        /*same height as header*/
+        visibility: hidden;
+    }
+
+    .arrow-left {
+        display: none;
+    }
+
+    .arrow-right {
+        display: none;
     }
 
     .adresses {
