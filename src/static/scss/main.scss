@@ -4,6 +4,7 @@ Colors, will be in variable.scss
 
 @import "variables.scss";
 
+/*Global*/
 body {
     font-size: 4vw;
     background-color: $off-white;
@@ -28,12 +29,10 @@ body {
         z-index: 999;
         top: 7%;
         bottom: 0%;
-
     }
 
     .flex {
         display: flex;
-
     }
 
     .relative {
@@ -87,11 +86,8 @@ body {
     }
 }
 
-/*Global*/
-
 /*Header*/
 header {
-
     flex-direction: column;
 
     .flex {
@@ -118,7 +114,8 @@ header {
     }
 
     button {
-        font-family: "brandon_grotesquelight", 'linotype_didotroman', Arial, Helvetica, sans-serif;
+        font-family: "brandon_grotesquelight", "linotype_didotroman", Arial,
+            Helvetica, sans-serif;
         font-size: large;
         padding: 2% 5%;
         background-color: $secondary;
@@ -132,7 +129,8 @@ header {
 /* First section*/
 #first-section {
     height: 60vw;
-    font-family: "brandon_grotesquelight", 'linotype_didotroman', Arial, Helvetica, sans-serif;
+    font-family: "brandon_grotesquelight", "linotype_didotroman", Arial, Helvetica,
+        sans-serif;
     margin-top: 2%;
     margin-bottom: 5%;
 
@@ -177,10 +175,7 @@ header {
 
 #second-section {
     height: 60vw;
-    font-family: "brandon_grotesquelight",
-        'linotype_didotroman',
-        Arial,
-        Helvetica,
+    font-family: "brandon_grotesquelight", "linotype_didotroman", Arial, Helvetica,
         sans-serif;
 
     .woman-in-room {
@@ -226,7 +221,6 @@ header {
             top: 205%;
             left: -5%;
             font-size: 0.75rem;
-
         }
     }
 }
@@ -234,10 +228,7 @@ header {
 #third-section {
     height: 60vw;
     margin: 0% 10%;
-    font-family: "brandon_grotesquelight",
-        'linotype_didotroman',
-        Arial,
-        Helvetica,
+    font-family: "brandon_grotesquelight", "linotype_didotroman", Arial, Helvetica,
         sans-serif;
 
     .room-picture {
@@ -303,7 +294,6 @@ header {
     }
 
     section {
-
         width: 100%;
         margin-bottom: 2rem;
 
@@ -325,12 +315,14 @@ header {
             margin-right: 45px;
             box-shadow: 0px -3px 20px $grey;
 
-
             article {
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
+            }
 
+            ul {
+                font-size: 0.8rem;
             }
         }
     }
@@ -341,19 +333,17 @@ header {
         border: none;
         color: $off-white;
         text-transform: uppercase;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         min-width: 250px;
     }
 
     .price-bold {
-
         font-size: 2rem;
     }
 }
 
 footer {
     justify-content: space-around;
-
 
     img {
         align-self: center;
@@ -364,7 +354,6 @@ footer {
         margin-left: auto;
         width: 25vw;
     }
-
 }
 
 @import "queries.scss";
