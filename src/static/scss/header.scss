@@ -1,0 +1,70 @@
+@import"variables.scss";
+
+header {
+    flex-direction: column;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    margin-top: -11px;
+
+    .flex {
+        display: flex;
+        flex-wrap: unset;
+    }
+
+    .active {
+        display: block;
+    }
+
+    nav {
+        transition: 0.3s ease;
+        flex-direction: row;
+        justify-content: center;
+        display: none;
+        background-color: white;
+        animation: closing-menu 1s forwards;
+
+        .logo {
+            max-width: 50%;
+            width: 35vw;
+            margin-top: 2%;
+        }
+
+        button {
+            font-family: "brandon_grotesquelight", "linotype_didotroman", Arial,
+                Helvetica, sans-serif;
+            font-size: large;
+            padding: 2% 5%;
+            background-color: $secondary;
+            border: none;
+            align-self: center;
+            margin-top: 2%;
+            color: $off-white;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            img {
+                align-self: center;
+                margin-right: auto;
+            }
+
+            article {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+
+    .nav-two {
+        height: 5vh;
+        animation: opening-menu 1s forwards;
+
+        section {
+            flex-direction: column;
+        }
+    }
+}

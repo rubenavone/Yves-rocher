@@ -1,0 +1,13 @@
+/*animation*/
+@keyframes opening-menu {
+  0% {
+    height: 11vh; }
+  100% {
+    height: 100vh; } }
+@keyframes closing-menu {
+  0% {
+    height: 100vh; }
+  100% {
+    height: 11vh; } }
+
+/*# sourceMappingURL=animation.css.map */

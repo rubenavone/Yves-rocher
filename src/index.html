@@ -10,11 +10,11 @@
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="stylesheet" type="text/css" href="static/dist/css/main.css" />
-  
+
 </head>
 
 <body>
-       
+
   <!-- Media queries viewer -->
   <p class="queries-xsm">
     < 576px</p> <p class="queries-sm">576px
@@ -24,29 +24,45 @@
   <p class="queries-xl">1200px</p>
   <!-- Media queries viewer end-->
 
-  <header class="flex">
-    <nav class="flex">
-      <img src="img/assets/icons8-menu.svg" alt="" />
-      <img class="logo" src="img/assets/logo.png" alt="logo yves rocher la gré des landes" />
+  <header class="flex ">
+    <nav class=" nav-one active">
+      <section>
+        <article>
+          <img src="img/assets/icons8-menu.svg" alt="" class="menu-open-js" />
+          <img class="logo" src="img/assets/logo.png" alt="logo yves rocher la gré des landes" />
+        </article>
+        <button class="upper-case">Réserver</button>
+      </section>
+
+    </nav>
+    <nav class="nav-two">
+      <section class="flex">
+        <img src="img/assets/icons8-menu.svg" alt="" class="menu-close-js" />
+        <ul class="flex">
+          <li>First section</li>
+          <li>second section</li>
+          <li>third section</li>
+        </ul>
+      </section>
     </nav>
     <!-- burger à ajouter-->
 
     <!--Alt for blinded people-->
-    <button class="upper-case">Réserver</button>
+
   </header>
 
   <main>
     <!-- First Section -->
-    <section id="first-section" >
+    <section id="first-section">
       <div class="slider">
-      <article class="box1 box anchor" id="first-pic">
-        <img class="image-fit"src="img/assets/header.jpg" alt="" />
-      </article>
-      <article class="box2 box anchor"  id="second-pic" >
-        <img class="image-fit" src="img/assets/header2.jpg" alt="" />
-      </article>
-    </div>
-      
+        <article class="box1 box anchor" id="first-pic">
+          <img class="image-fit" src="img/assets/header.jpg" alt="" />
+        </article>
+        <article class="box2 box anchor" id="second-pic">
+          <img class="image-fit" src="img/assets/header2.jpg" alt="" />
+        </article>
+      </div>
+
 
       <!-- <img class="absolute arrow-left" src="img/assets/arrow.svg" alt="" srcset="">
       <img class="absolute arrow-right" src="img/assets/arrow.svg" alt="" srcset=""> -->
@@ -70,10 +86,10 @@
         <h2>9:23</h2>
         <h3>Un doux Réveil</h2>
           <div>
-          <p>Laissez La nature</p>
-          <p>vous Réveiller tout</p>
-          <p>en douceur</p>
-        </div>
+            <p>Laissez La nature</p>
+            <p>vous Réveiller tout</p>
+            <p>en douceur</p>
+          </div>
       </article>
     </section>
 
@@ -85,9 +101,9 @@
       <article class="absolute place-top">
         <h2 class="hour">11:07</h2>
         <h3>detente.</h3>
-          <h4>relaxation.</h4>
+        <h4>relaxation.</h4>
         <h5>silence.</h5>
-          <div>
+        <div>
           <p>
             se ressou<span class="white">rcer,se retrouver .</span>..</p>
           <p>un rituel p<span class="white">our soi pour une</span> </p>
@@ -113,7 +129,7 @@
           <button>En savoir plus</button>
         </main>
       </section>
-      
+
       <section>
         <img src="img/assets/offre2.jpg " alt="" />
         <main>
@@ -122,7 +138,7 @@
             vos amis ou votre famille.
             Réservation jusqu'au 20/12/2017
           </p>
-          <article class="card-size" >
+          <article class="card-size">
             <p class="price-bold">490 EUR</p>
             <div>
               <p>2 personnes</p>

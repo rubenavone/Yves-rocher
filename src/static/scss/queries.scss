@@ -25,9 +25,16 @@
         }
       }
 
-      button {
-        align-self: baseline;
-        margin-right: 2%;
+
+    }
+  }
+
+  header {
+    nav {
+      .logo {
+        width: 20vw;
+        margin-left: 40%;
+        justify-self: initial;
       }
     }
   }
@@ -36,16 +43,20 @@
     article {
       font-size: 0.8rem;
       left: 10%;
-      top: 25%;
+      top: 10%;
 
-      img {
-        width: 30vw;
+      height: img {
+        width: 20vw;
         margin-bottom: 7%;
       }
 
       button {
         margin-top: 4%;
         padding: 4% 15%;
+      }
+
+      .slow-life {
+        width: 60vw;
       }
     }
 
@@ -55,6 +66,8 @@
   }
 
   #second-section {
+    height: 84vh;
+
     article {
       div {
         right: -50%;
@@ -63,7 +76,14 @@
     }
   }
 
+  #third-section {
+    height: 84vh;
+
+  }
+
   #fourth-section {
+
+
     button {
       padding: 4% 30%;
       background-color: $green;
@@ -100,6 +120,13 @@
       .logo {
         width: 15vw;
       }
+
+      section {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 5%;
+        height: 16vh;
+      }
     }
   }
 
@@ -107,20 +134,25 @@
     margin-top: 0%;
 
     article {
-      top: 20%;
+      top: 15%;
       left: 15%;
+
+      .slow-life {
+        width: 45vw;
+      }
     }
 
     .adresses {
       right: 0px;
-      bottom: 5%;
+      bottom: 0;
       color: $off-white;
       text-shadow: none;
     }
 
+
     .arrow-left {
       display: block;
-      top: 45%;
+      top: 65%;
       left: -20%;
       background-color: $grey;
       padding: 1% 2%;
@@ -130,13 +162,13 @@
 
     .arrow-right {
       display: block;
-      top: 45%;
-      right: -65%;
+      top: 65%;
+      right: -85%;
       background-color: $grey;
       padding: 1% 2%;
       width: 2vw;
-
     }
+
   }
 
   #second-section {
@@ -160,7 +192,7 @@
       width: 53%;
       right: -3%;
       height: 29%;
-      top: 32%;
+      top: 65%;
       object-fit: cover;
       object-position: center;
     }
@@ -168,7 +200,7 @@
 
   #third-section {
     overflow: visible;
-    margin-top: -10%;
+
 
     .room-picture {
       left: 50%;
@@ -212,6 +244,12 @@
     }
   }
 
+  #fourth-section {
+    section {
+      height: unset;
+    }
+  }
+
   footer {
     .logo {
       margin-left: auto;
@@ -236,7 +274,7 @@
   }
 
   header {
-    height: 15vh;
+    height: 10vh;
     position: fixed;
     top: 0;
     z-index: 2;
@@ -247,16 +285,33 @@
       .logo {
         width: 10vw;
       }
+
+      section {
+        height: 10vh;
+      }
     }
   }
 
   #first-section {
-    height: 100vh;
+    height: 75vh;
   }
 
-  #second-section {}
+  #second-section {
+    margin: 0% 0%;
+    margin-bottom: -25%;
 
-  #third-section {}
+    .woman-in-room {
+      top: 15%;
+    }
+
+    .litle-pic {
+      top: 40%;
+    }
+  }
+
+  #third-section {
+    height: 53vh;
+  }
 
   #fourth-section {
     background-color: $off-white;
@@ -320,5 +375,35 @@
     }
 
     font-size: 1.5rem;
+  }
+
+  #first-section {
+    height: 100vh;
+
+    article {
+      font-size: 1.5rem;
+
+      .slow-life {
+        width: 35vw;
+      }
+
+      .arrow-right {
+        right: -125%;
+      }
+    }
+
+  }
+
+  #second-section {
+    height: 100vh;
+  }
+
+  #third-section {
+    height: 100vh;
+    margin-top: 30%;
+  }
+
+  #fourth-section {
+    height: 100vh;
   }
 }

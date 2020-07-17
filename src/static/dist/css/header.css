@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'avant_gardedemiregular';
+  src: url("avantgardedemi-webfont.woff2") format("woff2"), url("avantgardedemi-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'brandon_grotesquelight';
+  src: url("brandon_light-webfont.woff2") format("woff2"), url("brandon_light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'brandon_grotesquemedium';
+  src: url("brandon_med-webfont.woff2") format("woff2"), url("brandon_med-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'linotype_didotroman';
+  src: url("didotlh-roman-webfont.woff2") format("woff2"), url("didotlh-roman-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+/*
+Color
+*/
+/*font*/
+header {
+  flex-direction: column;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  margin-top: -11px; }
+  header .flex {
+    display: flex;
+    flex-wrap: unset; }
+  header .active {
+    display: block; }
+  header nav {
+    transition: 0.3s ease;
+    flex-direction: row;
+    justify-content: center;
+    display: none;
+    background-color: white;
+    animation: closing-menu 1s forwards; }
+    header nav .logo {
+      max-width: 50%;
+      width: 35vw;
+      margin-top: 2%; }
+    header nav button {
+      font-family: "brandon_grotesquelight", "linotype_didotroman", Arial, Helvetica, sans-serif;
+      font-size: large;
+      padding: 2% 5%;
+      background-color: #8a962b;
+      border: none;
+      align-self: center;
+      margin-top: 2%;
+      color: #f9f9f9; }
+    header nav section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      header nav section img {
+        align-self: center;
+        margin-right: auto; }
+      header nav section article {
+        display: flex;
+        justify-content: space-around; }
+  header .nav-two {
+    height: 5vh;
+    animation: opening-menu 1s forwards; }
+    header .nav-two section {
+      flex-direction: column; }
+
+/*# sourceMappingURL=header.css.map */

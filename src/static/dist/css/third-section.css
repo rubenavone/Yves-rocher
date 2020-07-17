@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'avant_gardedemiregular';
+  src: url("avantgardedemi-webfont.woff2") format("woff2"), url("avantgardedemi-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'brandon_grotesquelight';
+  src: url("brandon_light-webfont.woff2") format("woff2"), url("brandon_light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'brandon_grotesquemedium';
+  src: url("brandon_med-webfont.woff2") format("woff2"), url("brandon_med-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'linotype_didotroman';
+  src: url("didotlh-roman-webfont.woff2") format("woff2"), url("didotlh-roman-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+/*
+Color
+*/
+/*font*/
+#third-section {
+  height: 60vw;
+  margin: 0% 10%;
+  font-family: "brandon_grotesquelight", "linotype_didotroman", Arial, Helvetica, sans-serif;
+  height: 100vh; }
+  #third-section .room-picture {
+    left: 38%;
+    top: -80%;
+    width: 77%;
+    height: 178%; }
+  #third-section .chill-picture {
+    transform: scaleX(-1);
+    z-index: 0;
+    object-fit: contain;
+    object-position: center;
+    position: relative;
+    width: 85%;
+    top: 60%;
+    left: 0%; }
+  #third-section article {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    text-shadow: 1px 1px 1px #fff;
+    text-align: left;
+    line-height: 0;
+    top: 0%;
+    margin-left: 5%;
+    font-size: 0.9rem;
+    width: 100%; }
+    #third-section article .hour {
+      margin-left: 10%;
+      color: #00000029;
+      text-shadow: none; }
+    #third-section article h2,
+    #third-section article h3,
+    #third-section article h4,
+    #third-section article h5 {
+      text-align: left;
+      font-size: 1rem; }
+    #third-section article div {
+      color: #f9f9f9;
+      line-height: 5px;
+      top: 100%;
+      font-size: 1rem; }
+    #third-section article .white {
+      color: #f9f9f9;
+      text-shadow: 1px 1px 1px #000000; }
+
+/*# sourceMappingURL=third-section.css.map */

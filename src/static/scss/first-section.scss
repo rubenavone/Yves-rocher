@@ -1,0 +1,112 @@
+@import "variables.scss";
+
+/* First section*/
+#first-section {
+
+    font-family: "brandon_grotesquelight", "linotype_didotroman", Arial, Helvetica,
+        sans-serif;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    display: flex;
+    width: 300vw;
+    transition: all 0.25s ease-in;
+    scroll-behavior: smooth;
+    height: 100vh;
+
+    .slider {
+        width: 200vw;
+        display: flex;
+        height: 55rem;
+        transition: all 0.25s ease-in;
+        transform: translatex(0);
+
+        .box {
+            height: 100%;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .box1 {
+            object-fit: contain;
+            width: 100vw;
+
+            img {
+                max-width: unset;
+                width: 100vw;
+                visibility: visible;
+                margin-top: 115px;
+                height: 100vh;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        .box2 {
+            width: 100vw;
+
+            img {
+                max-width: unset;
+                width: 100vw;
+                visibility: visible;
+                margin-top: 115px;
+                height: 100vh;
+                object-fit: cover;
+                object-position: right;
+            }
+        }
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        left: 13%;
+        top: 20%;
+        line-height: 0;
+        text-align: center;
+
+        p {
+            color: $blue;
+            text-shadow: 1px 1px 1px $white;
+        }
+
+        .slow-life {
+            width: 75vw;
+            margin-top: 50%;
+            z-index: 1;
+            align-self: center;
+        }
+
+        button {
+            background-color: unset;
+            border: 1px solid $grey;
+            padding: 2% 3%;
+            align-self: center;
+            color: $blue;
+            text-shadow: 1px 1px 1px $white;
+        }
+    }
+
+    .anchor {
+        margin-top: -115px;
+        /*same height as header*/
+        visibility: hidden;
+    }
+
+    .arrow-left {
+        display: none;
+    }
+
+    .arrow-right {
+        display: none;
+    }
+
+    .adresses {
+        bottom: 0;
+        font-size: 0.8rem;
+        color: $off-white;
+        text-shadow: 1px 1px 1px $black;
+        width: 100%;
+        text-align: right;
+    }
+}

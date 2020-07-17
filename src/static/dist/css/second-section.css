@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'avant_gardedemiregular';
+  src: url("avantgardedemi-webfont.woff2") format("woff2"), url("avantgardedemi-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'brandon_grotesquelight';
+  src: url("brandon_light-webfont.woff2") format("woff2"), url("brandon_light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'brandon_grotesquemedium';
+  src: url("brandon_med-webfont.woff2") format("woff2"), url("brandon_med-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'linotype_didotroman';
+  src: url("didotlh-roman-webfont.woff2") format("woff2"), url("didotlh-roman-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+/*
+Color
+*/
+/*font*/
+#second-section {
+  height: 100vh;
+  font-family: "brandon_grotesquelight", "linotype_didotroman", Arial, Helvetica, sans-serif; }
+  #second-section .woman-in-room {
+    width: 74%;
+    top: 30%;
+    left: 4%; }
+  #second-section .litle-pic {
+    width: 67%;
+    height: 40%;
+    z-index: 0;
+    position: absolute;
+    right: 10%;
+    height: 40%;
+    object-position: center;
+    top: 52%;
+    object-fit: cover; }
+  #second-section article {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    text-shadow: 1px 1px 1px #fff;
+    text-align: center;
+    line-height: 0;
+    margin-left: 32%;
+    font-size: 0.9rem; }
+    #second-section article h2 {
+      color: #00000029; }
+    #second-section article div {
+      line-height: 5px;
+      color: #f9f9f9;
+      position: absolute;
+      top: 140%;
+      left: -5%;
+      font-size: 0.75rem; }
+
+/*# sourceMappingURL=second-section.css.map */
