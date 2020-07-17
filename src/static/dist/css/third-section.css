@@ -34,7 +34,7 @@ Color
     height: 178%; }
   #third-section .chill-picture {
     transform: scaleX(-1);
-    z-index: 0;
+    z-index: 1;
     object-fit: contain;
     object-position: center;
     position: relative;

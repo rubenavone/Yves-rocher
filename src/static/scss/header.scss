@@ -3,7 +3,7 @@
 header {
     flex-direction: column;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     margin-top: -11px;
 
@@ -21,12 +21,14 @@ header {
         flex-direction: row;
         justify-content: center;
         display: none;
-        background-color: white;
+        background-color: $off-white;
         animation: closing-menu 1s forwards;
+        box-shadow: 0px 0px 10px $grey;
+        padding: 0 1%;
 
         .logo {
             max-width: 50%;
-            width: 35vw;
+            width: 25vw;
             margin-top: 2%;
         }
 
@@ -38,14 +40,10 @@ header {
             background-color: $secondary;
             border: none;
             align-self: center;
-            margin-top: 2%;
             color: $off-white;
         }
 
         section {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
 
             img {
                 align-self: center;
@@ -55,6 +53,7 @@ header {
             article {
                 display: flex;
                 justify-content: space-around;
+                margin-top: 5px;
             }
         }
     }
@@ -62,9 +61,13 @@ header {
     .nav-two {
         height: 5vh;
         animation: opening-menu 1s forwards;
+        margin-top: 0.5%;
+        padding-top: 17px;
 
-        section {
-            flex-direction: column;
+        ul {
+            margin-left: 25%;
+            list-style: none;
+            line-height: 100px;
         }
     }
 }

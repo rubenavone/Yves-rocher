@@ -77,7 +77,6 @@ Color
     #first-section article .slow-life {
       width: 75vw;
       margin-top: 50%;
-      z-index: 1;
       align-self: center; }
     #first-section article button {
       background-color: unset;

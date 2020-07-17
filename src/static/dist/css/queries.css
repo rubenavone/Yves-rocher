@@ -91,8 +91,6 @@ Color
   header nav .logo {
     width: 15vw; }
   header nav section {
-    flex-direction: row;
-    justify-content: space-between;
     padding: 0 5%;
     height: 16vh; }
 
@@ -203,9 +201,17 @@ Color
       width: 10vw; }
     header nav section {
       height: 10vh; }
+      header nav section article {
+        margin-top: 4%; }
 
   #first-section {
     height: 75vh; }
+    #first-section .slider .box1 img {
+      height: 75vh; }
+    #first-section .slider .box2 img {
+      height: 75vh; }
+    #first-section .adresses {
+      bottom: 24%; }
 
   #second-section {
     margin: 0% 0%;
@@ -253,14 +259,39 @@ Color
     body .queries-xl {
       display: block; }
 
+  header nav .logo {
+    width: 10vw;
+    margin-top: 0; }
+
+  /* main.css | http://localhost:3000/static/dist/css/main.css */
+  header {
+    /* margin-top: -11px; */
+    margin-top: -23px; }
+    header nav .logo {
+      width: 8vw;
+      margin-top: 7px; }
+    header nav button {
+      padding: 1% 4%;
+      margin-top: auto; }
+    header nav section article {
+      margin-top: 1%; }
+
   #first-section {
-    height: 100vh; }
+    height: 100vh;
+    /* main.css | http://localhost:3000/static/dist/css/main.css */ }
     #first-section article {
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      top: 0; }
       #first-section article .slow-life {
         width: 35vw; }
       #first-section article .arrow-right {
         right: -125%; }
+    #first-section .slider .box1 img {
+      height: 100vh; }
+    #first-section .slider .box2 img {
+      height: 100vh; }
+    #first-section .adresses {
+      bottom: 0; }
 
   #second-section {
     height: 100vh; }
